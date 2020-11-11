@@ -1,0 +1,192 @@
+:root {
+	--primary-color: #135f61;
+	--text-color: #333;
+	--title-color: #292b3a;
+	--white-color: #fff;
+	--header-color: #eaeaec;
+	--body-background: #F5F7FA;
+	--background-color: #8bb6b8;
+	--border-radius-section: 20px;
+
+	--dark-color: #202020;
+	--black-color: #000;
+	--facebook-color: #4267b2;
+	--linkedin-color: #0073b1;
+	--twitter-color: #1DA1F2;
+	--instagram-color: #a72727;
+
+	--top-bar: 36px;
+	--top-nav: 116px;
+	--margin-top: 24px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: 'Poppins', sans-serif;
+	font-size: 62.5%;
+	line-height: 1.6rem;
+	background-color: var(--body-background);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+
+}
+.btn-lg {
+	font-size: 1.6rem;
+	padding: 12px;
+	margin: 12px 4px;
+	border-radius: 8px;
+}
+/* ====================== SECTION TITLE ======================*/
+.main-about,
+.main-resume,
+.main-work,
+.main-contact {
+	margin: 12px 0;
+	padding: 0 12px;
+}
+.main-about__content,
+.main-resume__content,
+.main-work__content,
+.main-contact__content {
+	background-color: var(--white-color);
+	border-radius: var(--border-radius-section);
+	height: auto;
+}
+.main-about__title,
+.main-resume__title,
+.main-work__title,
+.main-contact__title {
+	padding: 12px 12px 0 0;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 4.2rem;
+	font-weight: 600;
+	color: var(--header-color);
+}
+
+/* ====================== NAME ======================*/
+.main-about__name,
+.main-resume__name {
+	font-size: 4.8rem;
+	line-height: 6.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--title-color);
+	text-shadow: 2px 2px 3px var(--background-color);
+}
+
+/* ====================== SOCIALS ======================*/
+.main-about__socials,
+.main-contact__socials {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 24px;
+}
+.main-about__socials-link,
+.main-contact__socials-link {
+	text-decoration: none;
+	font-size: 3rem;
+	margin: 0 12px;
+	transition: all 0.35s ease-out;
+	cursor: pointer;
+}
+.main-about__socials-link,
+.main-contact__socials-link:first-child {
+	margin-left: 0;
+}
+.main-about__socials-link:hover,
+.main-contact__socials-link:hover {
+	transform: translate(0, -8px);
+}
+.main-about__icon-fb,
+.main-contact__icon-fb {
+	color: var(--facebook-color);
+}
+
+.main-about__icon-ig,
+.main-contact__icon-ig {
+	color: var(--instagram-color);
+}
+.main-about__icon-in,
+.main-contact__icon-in {
+	color: var(--linkedin-color);
+}
+.main-about__icon-tw,
+.main-contact__icon-tw {
+	color: var(--twitter-color);
+}
+
+/*============ MEDIA QUERIES ============*/
+
+/* Devices under 1199px (xl) */
+@media (min-width: 1200px) {
+	.main-contact__content {
+		height: 400px;
+	}
+}
+/* Devices under 992px (lg) */
+@media (max-width: 991.98px) {
+	/* Home */
+	.col-auto {
+		text-align: left;
+		padding: 0;
+	}
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+	/* Navigation */
+	.navbar-expand-md .navbar-toggle {
+		display: block;
+	}
+	.nav-pills {
+		display: block;
+		padding: 12px 0;
+	}	
+
+	/* About */
+	.main-about__img {
+		display: none;
+	}
+	/* Contact */
+	.main-contact__row-info {
+		text-align: center;
+	}
+	.main-contact__socials {
+		justify-content: center;
+		margin: 0 auto;
+	}
+}
+/* Devices under 576px (sm) */
+@media (max-width: 576px) {  
+	/* Navigation */
+	.navbar-expand-md .navbar-toggle {
+		display: block;
+	}
+	.nav-pills {
+		display: block;
+		padding: 12px 0;
+	}
+
+	/* About */
+	.main-about__img {
+		display: none;
+	}
+	
+	/* Contact */
+	.main-contact__row-info {
+		text-align: center;
+	}
+	.main-contact__socials {
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+}
+
+

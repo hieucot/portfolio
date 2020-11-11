@@ -1,0 +1,251 @@
+/* ====================== NAVIGATION ======================*/
+#header-fix {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: var(--body-background);
+	border-radius: 8px;
+	padding: 8px 0;
+}
+.fixed-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.navbar-brand {
+	text-decoration: none;
+	color: var(--dark-color);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+.navbar-toggle{
+	display: none;
+	font-size: 2.4rem;
+	border-radius: 8px;
+	border: none;
+	background-color: var(--body-background);
+}
+
+.nav-pills {
+	margin-left: auto;
+}
+.nav-item {
+	list-style: none;
+}
+.nav-link {
+	display: block;
+	padding: 15px 20px;
+	font-size: 1.6rem;
+	color: var(--text-color);
+}
+.nav-link:hover {
+	color: var(--text-color);
+}
+#header-fix
+.nav-pills .nav-link.active {
+	background-color: var(--primary-color);
+	border-radius: 8px;
+}
+
+/* ====================== HOME ======================*/
+.main-home {
+	margin-top: 72px;
+	padding: 0 12px;
+}
+.main-home__content {
+	background-image: linear-gradient(#44A08D, #093637);
+	height: 100%;
+	border-radius: var(--border-radius-section);
+	padding: 24px;
+}
+.main-home__row {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: center;
+}
+
+.main-home__paragraph {
+	font-size: 3.4rem;
+	font-weight: 700;
+	color: var(--white-color);
+	text-shadow: 3px 3px 2px var(--dark-color);
+	margin-bottom: 12px;
+}
+.main-home__heading {
+	font-size: 5.8rem;
+	font-weight: 700;
+	color: var(--white-color);
+	text-shadow: 3px 3px 1px var(--dark-color);
+	margin-bottom: 12px;
+}
+.main-home__major {
+	font-size: 3.6rem;
+	font-weight: 700;
+	color: var(--white-color);
+	text-shadow: 3px 3px 2px var(--dark-color);
+	padding-bottom: 12px;
+}
+
+.main-home__img {
+	margin: 12px 0;
+	max-width: 250px;
+	border-radius: 50%;
+	box-shadow: 1px 3px 10px #fff;
+}
+
+/* ====================== ABOUT ======================*/
+
+.main-about__row {
+	display: flex;
+	justify-content: space-between;
+	
+}
+.main-about__wrap-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 24px;
+}
+.main-about__img {
+	max-width: 75%;
+	border-radius: 8px;
+	box-shadow: 2px 3px 10px var(--dark-color);
+}
+
+
+.main-about__major {
+	color: var(--primary-color);
+	text-shadow: 2px 2px 3px var(--dark-color);
+}
+.main-about__paragraph {
+	font-size: 1.8rem;
+	line-height: 3.2rem;
+	text-align: justify;
+}
+
+
+
+
+
+/* ====================== RESUME ======================*/
+
+.main-resume__timeline {
+	margin-top: 30px;
+	border-left: 1px solid var(--primary-color);
+	padding-left: 20px;
+	position: relative;
+}
+.main-resume__item {
+	position: relative;
+}
+.main-resume__timeline .main-resume__item::after {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: var(--primary-color);
+	top: 6px;
+	left: -28px;
+	border-radius: 50%;
+}
+
+.main-resume__job {
+	color: var(--primary-color);
+	font-size: 2.2rem;
+	font-weight: 600;
+}
+.main-resume__work {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+.main-resume__paragraph {
+	font-size: 1.4rem;
+	line-height: 2.8rem;
+	letter-spacing: 0.5px;
+}
+
+/* ====================== WORK ======================*/
+.main-work__btn {
+	font-size: 1.8rem;
+	border-radius: 8px;
+	text-align: center;
+	margin: 0 4px 24px;
+	padding: 8px 24px;
+}
+
+.main-work__btn:hover,
+.main-work__btn-active {
+	background-color: var(--primary-color);
+	color: var(--white-color);
+}
+
+/* #work .main-work__nav-pills {
+	margin: 12px 16px;
+}
+#work
+.main-work__nav-link.active{
+	background-color: var(--primary-color);
+	border-radius: 8px;
+} */
+
+.main-work__img {
+	border-radius: 8px;
+	margin-bottom: 24px;
+}
+
+/* Light box */
+.ekko-lightbox-nav-overlay {
+	z-index: 1;
+    position: absolute;
+	top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	font-size: 4rem;
+}
+.ekko-lightbox-nav-overlay a {
+	color: var(--white-color);
+	margin: 0 24px;
+	text-decoration: none;
+	position: relative;
+}
+.ekko-lightbox-nav-overlay a::before {
+	content: "";
+	position: absolute;
+	top: -50%;
+	left: -24px;
+	width: 68px;
+	height: 100%;
+}
+
+/* ====================== CONTACT ======================*/
+
+.main-contact__heading {
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	margin: 8px 0;
+}
+.main-contact__paragraph {
+	font-size: 1.6rem;
+	line-height: 2.8rem;
+	letter-spacing: 0.5px;
+	margin-bottom: 24px;
+}
+.main-contact__link, .main-contact__link:hover {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+.main-contact__img {
+	width: 15%;
+	margin: 0 auto 24px;
+}
