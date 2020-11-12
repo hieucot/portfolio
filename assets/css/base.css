@@ -30,6 +30,7 @@ body, html {
 	font-size: 62.5%;
 	line-height: 1.6rem;
 	background-color: var(--body-background);
+	scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', sans-serif;
@@ -161,6 +162,9 @@ h1, h2, h3, h4, h5, h6 {
 		justify-content: center;
 		margin: 0 auto;
 	}
+	/* .go-top {
+		display: block;
+	} */
 }
 /* Devices under 576px (sm) */
 @media (max-width: 576px) {  

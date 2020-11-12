@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 			$("html, body").animate({
 				scrollTop: $(hash).offset().top
-			}, 400, function () {
+			}, 50, function () {
 				// Add hash (#) to URL when done scrolling (default click behavior)
 				window.location.hash = hash;
 			});
@@ -42,4 +42,17 @@ $(document).ready(function () {
 		$(this).ekkoLightbox();
 	});
 
+	// Back To Top
+	$(window).scroll(function (){
+		if($(window).scrollTop() > 100) {
+			$(".go-top").css ({
+				"opacity":"100","pointer-events":"auto"
+			});
+		}
+		else {
+			$(".go-top").css ({
+				"opacity":"0", "pointer-events":"none"
+			});
+		}
+	});
 });
