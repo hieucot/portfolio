@@ -55,4 +55,8 @@ $(document).ready(function () {
 			});
 		}
 	});
+
+	// Animation loading section
+	var wow = new WOW();
+	wow.init();
 });
