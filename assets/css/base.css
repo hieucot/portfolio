@@ -109,10 +109,15 @@ h1, h2, h3, h4, h5, h6 {
 .main-contact__icon-fb {
 	color: var(--facebook-color);
 }
-
-.main-about__icon-ig,
-.main-contact__icon-ig {
-	color: var(--instagram-color);
+.main-about__socials-link .main-about__icon-ig,
+.main-contact__socials-link .main-contact__icon-ig {
+    background: #f09433; 
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	color: var(--white-color);
+	border-radius: 8px;
+	padding: 0 2px;
 }
 .main-about__icon-in,
 .main-contact__icon-in {

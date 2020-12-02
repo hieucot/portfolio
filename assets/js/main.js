@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 	// Back To Top
 	$(window).scroll(function (){
-		if($(window).scrollTop() > 100) {
+		if($(window).scrollTop() > 2200) {
 			$(".go-top").css ({
 				"opacity":"100","pointer-events":"auto"
 			});
